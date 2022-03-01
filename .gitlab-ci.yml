@@ -1,0 +1,11 @@
+image: maven:latest
+
+cache:
+  paths:
+  - .m2/repository/
+  - targer/
+
+test:
+  stage: test
+  script:
+    -mvn clean test
